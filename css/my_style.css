@@ -112,6 +112,14 @@ nav ul li a:hover{
 }
 /* css trên cho phần header*/
 
+/*css cho phần body*/
+
+/*css cho slide đầu*/
+
+.slide{
+  width: 100%;
+}
+
 
 .list-products,.hot-products,.news{
   margin-top: 2rem;
@@ -125,6 +133,7 @@ h3{
   font-size: 32pt;
   text-transform: uppercase;
   padding: 2.5rem;
+  cursor: pointer;
 } /*set cho các tiêu đề lớn chung*/
 .products{
   text-align: center;
@@ -149,7 +158,7 @@ h3{
   transition: 0.5s;
   z-index: 1000;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
+} /*hiệu ứng khi rê chuột lên các sản phẩm*/
 p{
   margin: 0.5em;
 }
@@ -168,9 +177,9 @@ p{
 }
 .bg-img .infor p{
   font-size: 14pt;
-  font-family: My_font3;
+  line-height: 1.5em;
   color: #636363;
-  padding: 1.5em 0;
+  padding: 1em 0;
 }
 .bg-img .infor{
   position: absolute;
@@ -198,7 +207,7 @@ p{
 /*set background cho phần sản phẩm*/
 .list-products,.news{
   background-image: url('../img/bg-list-product.jpg');
-  background-size: contain;
+  background-size: cover;
 }
 /*Nút xem thêm sản phẩm*/
 .see-more{
@@ -218,8 +227,11 @@ p{
   background: #c63528;
   transition: 0.5s;
 }
+
+/*css cho phần tin tức*/
 .news{
   margin-bottom: 6rem;
+  padding: 0.5em;
 }
 .news .title{
   padding:0.5em 0;
@@ -228,9 +240,45 @@ p{
 .news p{
   margin: 0!important;
 }
+.post{
+  padding: 0.5em;
+}
+
+/*css phần profile*/
+#profile{
+  position: relative;
+}
+.avatar{
+  position: absolute;
+  top:30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text{
+  width: 1240px;
+  left: -420%;
+  text-align: center;
+  position: absolute;
+  color: white;
+  font-size: 14pt;
+  padding: 1em;  
+}
+.text p{
+  color: #d5d5d5;
+  padding: 0.3em;
+}
+/*css hiệu ứng rê chuột lên các bài viết*/
+.post:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  z-index: 1000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
 
 /*css footer*/
-
+.footer{
+  box-shadow:  0px -7px 5px rgba(0, 0, 0, 0.05);
+}
 .footer{
   background-image: url('../img/bg-footer.jpg');
   background-repeat: no-repeat;
